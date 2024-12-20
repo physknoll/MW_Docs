@@ -100,9 +100,11 @@
       auto2top: true,
       hideSidebar: false,
       routerMode: 'hash',
-      basePath: '/',
+      basePath: '/docs/',
+      nameLink: '/docs/',
       alias: {
-        '/_sidebar.md': '_sidebar.md'
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/': 'README.md'
       },
       homepage: 'README.md',
       mergeNavbar: true,
