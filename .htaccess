@@ -1,0 +1,27 @@
+# Docsify SPA routing for /docs path
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /docs/
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /docs/index.html [L]
+</IfModule>
+
+# Protect sensitive files but allow Docsify markdown files
+<FilesMatch "^\.(?!md$)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Explicitly allow Docsify markdown files
+<FilesMatch "^(_sidebar\.md|_navbar\.md|README\.md)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Set correct MIME type for markdown files
+AddType text/plain .md
+
+# Prevent directory listing
+Options -Indexes 
