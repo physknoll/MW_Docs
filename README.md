@@ -1,6 +1,6 @@
 # MyWay Documentation
 
-*Last updated: December 20, 2023 - Webhook Test*
+*Last updated: December 21, 2023 - Testing New Webhook*
 
 **First Snapshot Release:** **February 1st** 📅
 
