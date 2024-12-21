@@ -2,6 +2,8 @@
 
 **First Snapshot Release:** **February 1st** 📅
 
+> Visit our documentation at [https://mywayai.com/docs](https://mywayai.com/docs) for the latest updates and guides.
+
 ---
 
 ## Overview ✨
