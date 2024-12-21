@@ -1,59 +1,119 @@
 # MyWay Datasets: Developer Guide 🚀 <!-- {docsify-ignore-all} -->
 
-**Test Update: December 20, 2024 - 23:40 PST - Webhook Test with Enhanced Logging** 🔄
-
 **First Snapshot Release:** **February 1st** 📅
+
+---
 
 ## Overview ✨
 
-Welcome to **MyWay Datasets**, your key to unlocking rich, real-world merchant data for training Large Language Models (LLMs). Instead of relying on sparse FAQs or generic text, our datasets give your models the depth, personality, and accuracy they need to handle business-specific questions and tasks like a pro. 🎉
+Welcome to **MyWay Datasets**, the gateway to a new standard of AI-driven customer interaction. Our datasets are designed to empower developers, researchers, and businesses by providing comprehensive, merchant-focused data for training Large Language Models (LLMs). 🎉
 
-**What Makes MyWay Special?**
-- **Merchant Q&A:** Natural Q&A pairs that reflect *actual* customer inquiries.
-- **Merchant Feedback (RLHF):** Direct feedback loops so models stay aligned with brand tone and factual correctness.
-- **Interaction Protocols:** Instructional data for multi-step tasks (like placing orders or scheduling appointments).
+With MyWay, models gain the depth, nuance, and accuracy needed to represent businesses authentically, enabling them to answer complex customer questions, follow detailed instructions, and align with brand-specific tone and identity. 🌟
 
-> **Pro Tip:** Our first dataset snapshot drops **February 1st**! Mark your calendar and stay tuned. 🎯
+---
 
-## Getting Started 🏁
+## Key Features 🗝️
 
-1. **Download the Dataset:**  
-   Head over to our [Dataset Portal](#) once it's live on February 1st. Each snapshot includes:
-   - JSON/JSONL files with Q&A, RLHF signals, and instructions.
-   - Merchant metadata, timestamps, and tags to keep it structured.
+- **Structured for Developers:** Three dataset categories tailored for LLM training:
+  - **Pre-training:** Foundational knowledge and context-building.
+  - **Supervised Fine-Tuning (SFT):** Domain-specific adaptation.
+  - **Reinforcement Learning with Human Feedback (RLHF):** Alignment and accuracy through iterative feedback.
 
-2. **Integrate With Your Pipeline:**  
-   - **Fine-Tune Your Model:** Add merchant Q&As to align LLMs with real brand contexts.
-   - **RAG (Retrieval-Augmented Generation):** Point your retrieval system to MyWay data so models can ground answers in truthful info.
-   - **RLHF Alignment:** Feed merchant feedback into the training loop. Models learn from *actual merchants*—fewer hallucinations, more authenticity.
+- **Built for RAG & API Access:** Retrieval-Augmented Generation (RAG) and raw data APIs make it simple to integrate real-time, merchant-specific knowledge into your applications. 🌐
 
-3. **Real-Time Updates & API Access:**  
-   For apps that need fresh info (e.g., product inventory, new offers), talk to us about API access. Sync updates in real-time—no stale data! 🔄  
-   > **Want Real-Time Streams?** [Contact Us!](#)
+- **Merchant-Centric:** Rich Q&A pairs, task-oriented instructions, and feedback loops directly from merchants for unparalleled authenticity.
 
-## Advanced Use Cases ⚙️
+> **First Release:** February 1st, with datasets refreshed monthly! 🗓️
 
-- **RLHF Queries:**  
-  Got model outputs you'd like merchants to review? We support RLHF submission loops where you can get direct corrections and ratings. Perfect for continuous improvement.  
-  > **Get Merchant Feedback:** [Reach Out](#) and start refining those responses!
+---
 
-- **Monthly Snapshots:**  
-  Every 30 days, we refresh the dataset to capture evolving business info. Think seasonal menus, new product lines, or updated store hours. Your model stays current—no manual chores needed. ⏳
+## Dataset Categories 📂
 
-## Roadmap 🔮
+### 1. Pre-training Data 📖
+**Purpose:** Provide foundational knowledge for LLMs, creating a broad understanding of merchant-specific terminology, common customer inquiries, and domain conventions.
 
-- **More Categories:** Expanding beyond cafés and boutiques into verticals like healthcare, fitness, and B2B services.
-- **Developer Tools:** Coming soon—scripts, templates, and helper libraries to make dataset integration a breeze.  
-- **Community Feedback:** Your suggestions shape our future. Let's evolve together! 💡
+**Includes:**
+- General merchant metadata.
+- Simulated Q&A exchanges.
+- Common customer scenarios across industries.
 
-## Support & Contact 🤝
+**Use Case:** Train base models to better grasp the vocabulary and context of merchant interactions.
 
-**Need help or have questions?** We're here for you!
+---
 
+### 2. Supervised Fine-Tuning (SFT) Data 🎯
+**Purpose:** Adapt LLMs to specific merchant needs, ensuring accuracy and alignment with brand tone.
+
+**Includes:**
+- Curated Q&A pairs reflecting real-world inquiries.
+- Detailed examples of merchant tasks and responses.
+- Industry-specific datasets for precise tuning.
+
+**Use Case:** Fine-tune pre-trained models for targeted industries or businesses.
+
+---
+
+### 3. Reinforcement Learning with Human Feedback (RLHF) Data 🤝
+**Purpose:** Continuously improve model accuracy, tone, and relevance through merchant feedback.
+
+**Includes:**
+- Model-generated outputs paired with merchant evaluations.
+- Corrections, ratings, and preference indicators.
+- Structured feedback loops for iterative improvement.
+
+**Use Case:** Align models with individual merchant preferences and ensure factual correctness.
+
+---
+
+## API Access & RAG 🔗
+
+### Coming Soon 🔜
+
+- **Retrieval-Augmented Generation (RAG):** Enhance your applications with real-time data retrieval powered by MyWay datasets.
+- **Raw Data API:** Direct access to merchant datasets for advanced customization and integration.
+
+> **Have specific dataset needs?** Contact us to discuss reasoning, chain-of-thought requirements, or custom solutions. 💬
+
+---
+
+## Why MyWay? 🌟
+
+- **Elevate Customer Interactions:** Models fine-tuned with MyWay data can:
+  - Answer nuanced customer questions.
+  - Reflect the unique tone and identity of businesses.
+  - Handle multi-step tasks with precision.
+
+- **Adaptable Across Industries:** From cafés and boutiques to healthcare and B2B services, MyWay datasets cater to diverse merchant needs.
+
+- **Always Up-to-Date:** Monthly snapshot releases ensure your models are trained on the freshest, most accurate data. ⏳
+
+---
+
+## Developer Roadmap 🛤️
+
+### February 1st 🎉
+- Initial release of **Pre-training**, **SFT**, and **RLHF** datasets.
+
+### Q2 2024 📅
+- Launch of APIs for RAG and raw data access.
+- Expansion into new merchant verticals.
+
+### Beyond 🔮
+- Community-driven dataset refinement.
+- Tools and scripts for seamless integration.
+- Collaboration opportunities with leading LLM teams.
+
+---
+
+## Get Involved 🤝
+
+### Contact Us 📩
 - **Technical Support:** [support@myway.com](mailto:support@myway.com)
-- **API & Integration Requests:** [api@myway.com](mailto:api@myway.com)
-- **RLHF Participation:** [rlhf@myway.com](mailto:rlhf@myway.com)
+- **Dataset Inquiries:** [datasets@myway.com](mailto:datasets@myway.com)
+- **API Access Requests:** [api@myway.com](mailto:api@myway.com)
 
-Let's build a more authentic, AI-driven world—together. 🌐💙
+We’re here to collaborate and customize solutions to your needs. Let’s revolutionize how businesses and AI interact. 🚀
 
-Test update: [current date]
+---
+
+## Let’s Build the Future Together 🌐
